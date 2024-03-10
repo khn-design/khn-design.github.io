@@ -1,0 +1,123 @@
+/*
+*/
+
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+#photo {
+	display: inline-block;
+}
+
+#page-wrap {
+	display: inline-block;
+    width: 900px;
+    margin: 50px 0px 50px 325px;
+}
+
+#menu-bar {
+	width: 300px;
+	position: fixed;
+	top: 0;
+}
+
+#logo {
+	color: #000;
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+a {
+ 	text-decoration: none;
+ }
+
+a:link, a:visited {
+ 	color: #ddd;
+ }
+
+a:hover {
+ 	color: #000
+ }
+
+a:active {
+	text-decoration: bold;
+	color: #ff1256;
+}
+
+.main {
+	color: #000;
+	width: 125px;
+	display: inline-block;
+	line-height: 25px;
+}
+
+.pic {
+	color: #000;
+	display: inline;
+}
+
+
+.main a:link {
+	color: #000;
+}
+
+.main a:hover, .main a:active {
+  color: #ff1256;
+}
+
+.item {
+	margin-left: 50px;
+	font-family: 'Archivo Black', 'Francois One', sans-serif;
+	font-size: 25px;
+	font-weight: 100;
+	color: #ddd;
+}
+
+.special_item {
+	margin-left: 50px;
+	font-family: 'Archivo Black', 'Francois One', sans-serif;
+	font-size: 25px;
+	font-weight: 100;
+	color: #ff1256;
+}
+
+hr {
+    display: block;
+    height:0px;
+    width: 225px;
+    border-top: 0.25px solid #eee;
+    margin: 10px 40px;
+    padding: 0;
+}
+
+body {
+	color: #000;
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 35px; 
+}
+
+img:hover {
+	opacity: 0.75;
+}
+
+.column {
+	vertical-align: top;
+	width: 250px;
+	margin: 0px 0px 0px 30px;
+	display: inline-block;
+}
+
+.image {
+	
+	margin: 0px 0px 25px 0px;
+	padding: 0px 0px;
+}
+
+/* responsive design for mobile */
+@media screen and (max-width:1200px) {
+    #menu-bar {
+    	position: absolute;
+    	}  
+  }

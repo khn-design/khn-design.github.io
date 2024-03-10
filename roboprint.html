@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<title>ROBOTIC PRINT</title>
+
+    	<link rel = "stylesheet" type = "text/css" href = "page.css" />
+    	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Nunito" rel="stylesheet">
+
+    	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	</head>
+
+	<body>
+
+		<div id = "menu-bar">
+			<div id = "logo">
+				<div class = "main">khanh nguyen</div><!-- 
+				--><div class = "pic"><a href="index.html" ><img src="khanh-avatar.png" alt="khanh-avatar" style = "width: 30%"></a></div>
+			</div>
+			<hr/>
+			<div class = "menu">
+				<!-- target blank opens a new tab; we don't need to do that for the current page -->
+				<div class = "special_item"><a href="projects.html" >projects</a></div> 
+				<hr/>
+				<div class = "item"><a href="graphic.html" >ui / graphics</a></div> 
+				<hr/>
+				<div class = "item"><a href="art.html" >art</a></div> 
+				<hr/>
+				<div class = "item"><a href="graphic/resume.png" >resume</a></div> 
+				<hr/>
+				<div class = "item"><a href="about.html" >about</a></div> 
+			</div>
+		</div>
+
+		<div id = "page-wrap">
+
+			<div class = "title">urop: robotic print</div>
+
+			<p>During Spring 2017, I participated in a UROP in the Digital Structures group under faculty advisor Caitlin Mueller and graduate supervisor Yijiang Huang. I worked on an ongoing project, Robotic Print, used 3D printing hardware attached to a KUKA robotic arm to create complex 3D-printed structures that could print in mid-air. The arm allowed for flexibility in the prints because it could follow different paths for optimal printing, instead of being confined to the layer-by-layer back-and-forth of a normal 3D printer.</p>
+
+			<p>During my time with the group, the project was two-pronged: Caitlin and Yijiang wanted to integrate the path optimization algorithm into a web visualization platform that designers and architects could use easily. In addition, they wanted to experiment with different extruder and hot-end designs to test what would work best and improve on their already-working model. At the time, the hardware setup was attached to a robotic arm in the Architecture Fab Lab, with the electronics spread around it. In order to better test out different designs, we decided to design a platform that made the setup more compact and mobile.</p>
+
+			<p>My job was to design a way to encase the electronics and controls that would integrate with the platform for the hardware that another mechanical engineering UROP, Kodiak, was building. My solution was to have two laser-cut boxes, the first one with the button and LCD screen press-fit and a hidden power supply and the second one with all of the circuits mounted and a clear top so that we could see the signal LEDs. I soldered and mounted new circuits to create a duplicate of the original setup, and tweaked the arduino code of the stepper motor that controlled the extrusion to make sure it was functioning. I made sure that the wires and connections were as neat and simple as possible, so that the project was portable and could easily integrate with other components.</p>
+
+			<p>The other part of my job was to take photographs and video to help document the project. This included experimenting with a thermal camera.</p>
+
+			<div class = "image" ><img src="projects/full setup.png" alt="robotic print" style = "width: 100%"></div>
+
+			<p>The layout of the robotic arm and 3D print hardware, along with the associated circuitry.</p>
+
+			<div class = "image" ><img src="projects/final boxes.png" alt="robotic print" style = "width: 100%"></div>
+
+			<p>My final design, with the circuitry.</p>
+
+			<div class = "image" ><img src="projects/full system.png" alt="robotic print" style = "width: 100%"></div>
+
+			<p>The integration of my design with the extrusion frame.</p>
+
+			<div class = "image" ><img src="projects/system extrude.png" alt="robotic print" style = "width: 100%"></div>
+
+			<p>The electronics at work! The portable design successfully extrudes.</p>
+
+			<div class = "image" ><img src="projects/close up.png" alt="robotic print" style = "width: 100%"></div>
+
+			<p>A closeup of the old design on the robotic arm.</p>
+
+			<div class = "image" ><img src="projects/thermal.png" alt="robotic print" style = "width: 100%"></div>
+
+			<p>Testing the extrusion with a thermal camera.</p>
+
+			<div class = "image" ><img src="projects/cad 1.png" alt="robotic print" style = "width: 100%"></div>
+
+			<p>I played with appropriate dimensions for the designs using Solidworks.</p>
+
+
+		</div>
+
+	</body>
+
+</html>
