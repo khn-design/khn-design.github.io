@@ -1,20 +1,141 @@
 /*
 */
-
-body,
-html {
-  width: 100%;
-  height: 100%; }
-
-#page-wrap {
-     width: 900px;
-     height: 100%;
-     margin: 0 auto;
+body {
+	align-content: center;
+	margin: 0 auto;
 }
 
-body {
-  font-family: 'Archivo Black', Arial, sans-serif;
-  font-size: 72px; }
+#header {
+    position: fixed;
+    width: 100%;
+    margin-top: 0 !important;
+    padding-bottom: 20px;
+    z-index: 10;
+    background-color: white;
+}
+
+#header, p {
+	font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+#logo {
+	max-width: 13.5%;
+	position: relative;
+	display: block;
+	padding: 10px 0 20px;
+	margin: 0 auto !important;
+	z-index: 9;
+}
+
+.current {
+	color: black;
+}
+
+.other {
+	color: lightgray;
+}
+
+.current, .other {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto !important;
+	padding: 0 20px;
+}
+
+#wrap {
+	padding-top: 125px;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	align-items: center; 
+	justify-content: center;
+}
+
+h1, h2 {
+	text-align: center;
+	font-family: Georgia, serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.column-four {
+	vertical-align: top;
+	width: 190px;
+	margin: 0px 0px 0px 30px;
+	display: inline-block;
+}
+
+.column-four img {
+	width: 100%;
+}
+
+.photo, .photo-prof {
+	width: 250px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.photo:hover, .column-four img:hover {
+	opacity: 0.75;
+}
+
+.photo img, .photo-prof img{
+    width: 100%;
+}
+
+.photo-prof {
+	position: relative;
+	float: left;
+}
+
+.photo-prof .prof-hover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.photo-prof:hover .prof-hover {
+	display: block;
+}
+
+.about {
+	width: 550px;
+	padding: 0 10px;
+}
+
+.about-para {
+	padding-left: 20px;
+	margin-left: 100px;
+	letter-spacing: 0.5px;
+}
+
+.close {
+	width: 300px;
+	display: inline-block;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.closeimg {
+	width: 300px;
+	display: inline-block;
+	vertical-align: middle;
+}
 
 a {
  	text-decoration: none;
@@ -26,135 +147,25 @@ a {
  }
 
  a:hover {
- 	color: gray;
+ 	color: rgba(244, 0, 134, 1);
  }
+
 
 /* padding is top, right, bottom, left*/
 
-.black {
-	color: #000000 ;
-	height: 100px;
-	width: 500px;
-	position: inline-block;
-	margin: 10px 0px -32px 50px;
+.cyan {
+	color: rgba(0, 229, 207, 1);  /* #00E5CF */ 
 }
 
-.hot-pink {
-	color: #ff1256;
-	height: 100px;
-	width: 500px;
-	position: inline-block;
-	margin: 0px 0px 0px 50px;
-	
-}
-
-.subtext {
-	color: #000000 ;
-	font-size: 20px ;
-	display: inline;
-}
-
-
-#photo {
-	width: 250px;
-	height: 350px;
-	position: inline-block;
-	margin: 150px 0px -200px 480px;
-}
-
-#tagline {
-	position: inline-block;
-	margin: -70px 0px 0px 50px;
-
-}
-
-#menu-bar {
-	width: 300px;
-	position: fixed;
-	top: 0;
-	visibility: hidden;
-}
-
-#logo {
-	color: #000;
-	margin-top: 40px;
-	margin-left: 40px;
-	margin-bottom: 20px;
-}
-
-.main {
-	color: #000;
-	width: 125px;
+.magenta {
+	color: rgba(244, 0, 134, 1);  /* #F40086 */ 
 	display: inline-block;
-	font-family: 'Archivo Black', sans-serif;
-	font-size: 35px; 
 }
 
-.pic {
-	color: #000;
-	display: inline;
+.yellow {
+	color: rgba(235, 175, 0, 1);  /* #EBAF00 */ 
 }
 
-
-.main a:link {
-	color: #000;
+.key {
+	color: rgba(41, 41, 41, 1);  /* #292929 */ 
 }
-
-.main a:hover, .main a:active {
-  color: #ff1256;
-}
-
-.item {
-	margin-left: 50px;
-	font-family: 'Archivo Black', sans-serif;
-	font-size: 25px;
-	font-weight: 100;
-	color: #ddd;
-}
-
-.special_item {
-	margin-left: 50px;
-	font-family: 'Archivo Black', sans-serif;
-	font-size: 25px;
-	font-weight: 100;
-	color: #ff1256;
-}
-
-hr {
-    display: block;
-    height:0px;
-    width: 225px;
-    border-top: 0.25px solid #eee;
-    margin: 10px 40px;
-    padding: 0;
-}
-
-/* responsive design for mobile */
-@media screen and (max-width: 1200px) {
-	a {
- 	text-decoration: none;
- 	}
-
-	a:link, a:visited {
- 	color: #ddd;
- 	}
-
-	a:hover {
- 	color: #000
- 	}
-
-	a:active {
-	text-decoration: bold;
-	color: #ff1256;
-	}
-	#banner {
-		visibility: hidden;
-	}
-    #menu-bar {
-    	position: absolute;
-    	visibility: visible;
-    }
-    #page-wrap {
-    	width: 500px;
-    }  
-  }
