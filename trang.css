@@ -133,7 +133,6 @@ hr {
     padding: 0;
 }
 
-
 .about{
 	padding-left: 25%;
 }
@@ -143,6 +142,14 @@ hr {
 	margin: 25px 0px 0px 0px;
 	padding: 0px 0px;
 	position: relative;	
+}
+
+.image1 {
+	
+	margin: 1%;
+	padding: 1% 0;
+	position: relative;	
+	display: inline;
 }
 
 .small_image {
