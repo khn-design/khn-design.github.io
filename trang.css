@@ -1,0 +1,161 @@
+/*
+*/
+body {
+	align-content: center;
+	margin: 0 auto;
+}
+
+#page-wrap {
+	display: inline-block;
+    width: 60%;
+    margin: auto;
+    padding: 125px 20%;
+}
+
+.wrap {
+	padding: 125px 250px;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	align-items: center; 
+	justify-content: center;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    margin-top: 0 !important;
+    padding-bottom: 20px;
+    z-index: 10;
+    background-color: white;
+    letter-spacing: 1px;
+}
+
+#header, h3 {
+	font-family: 'letter-gothic-std', 'Quicksand', monospace, sans-serif;
+	font-weight: 450;
+	font-style: normal;
+    font-size: 15px;
+    text-align: center;
+}
+
+.title {
+	color: #000;
+	display: inline-block;
+	font-family: 'letter-gothic-std', 'Quicksand', monospace, sans-serif;
+	font-size: 35px;
+	text-align: left; 
+	
+}
+
+h2 {
+	color: #000;
+	display: inline-block;
+	font-family: 'letter-gothic-std', 'Quicksand', monospace, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: left; 
+	margin-bottom: none;
+}
+
+p {
+	font-family: 'Quicksand', monospace, sans-serif;
+	font-weight: 350;
+	font-style: normal;
+    font-size: 15px;
+    text-align: left;
+}
+
+#logo {
+	max-width: 15%;
+	position: relative;
+	display: block;
+	padding: 10px 0 20px;
+	margin: 0 auto !important;
+	z-index: 9;
+}
+
+.column-two {
+	vertical-align: top;
+	width: 45%;
+	margin: 0px 0px 0px 30px;
+	display: inline-block;
+}
+
+.current {
+	color: black;
+}
+
+.other {
+	color: rgba(180, 180, 180, 1); /*light grey */
+}
+
+.current, .other {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto !important;
+	padding: 0 20px;
+}
+
+
+#photo {
+	display: inline-block;
+}
+
+a {
+ 	text-decoration: none;
+ }
+
+a:link, a:visited {
+ 	color: #ddd;
+ }
+
+a:hover {
+ 	color: #000
+ }
+
+a:active {
+	text-decoration: bold;
+	color: #ff1256;
+}
+
+.pic {
+	color: #000;
+	display: inline;
+}
+
+hr {
+    display: block;
+    height:0px;
+    width: 225px;
+    border-top: 0.25px solid #eee;
+    margin: 10px 40px;
+    padding: 0;
+}
+
+
+.about{
+	padding-left: 25%;
+}
+
+.image {
+	
+	margin: 25px 0px 0px 0px;
+	padding: 0px 0px;
+	position: relative;	
+}
+
+.small_image {
+
+	margin: 25px 0px 0px 0px;
+	padding: 0px 0px;
+	position: relative;	
+	display: inline-block;
+}
+
+/* responsive design for mobile */
+@media screen and (max-width:1200px) {
+    #menu-bar {
+    	position: absolute;
+    	}  
+  }
