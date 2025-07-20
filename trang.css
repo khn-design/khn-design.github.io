@@ -102,22 +102,19 @@ p {
 	display: inline-block;
 }
 
+
 a {
  	text-decoration: none;
+ 	color: black;
  }
 
-a:link, a:visited {
- 	color: #ddd;
+ a:link, a:visited {
+ 	color: black;
  }
 
-a:hover {
- 	color: #000
+ a:hover {
+ 	color: rgba(244, 0, 134, 1);
  }
-
-a:active {
-	text-decoration: bold;
-	color: #ff1256;
-}
 
 .pic {
 	color: #000;
