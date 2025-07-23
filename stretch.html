@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<title>stretch</title>
+
+    	<link rel = "stylesheet" type = "text/css" href = "trang.css" />
+    	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    	<link rel="stylesheet" href="https://use.typekit.net/twf0dtc.css">
+
+    	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	</head>
+
+	<body>
+
+		<div id = "header">
+			<a href="index.html"><img id="logo" src="portfolio/icons/khnlogo2.png" alt="header logo"></a>
+			<!--<a href="index.html"><img id="logo" src="portfolio/icons/khn-cmyklogo2.png" alt="header logo"></a>-->
+				<div class = "current"><a href="index.html">ABOUT</a></div> <div class = "other">RESEARCH</div> <div class = "other">DESIGN</div> <div class = "other">CONTENT</div> <div class = "other">CONTACT</div>
+		</div>
+
+		<div id = "page-wrap">
+
+			<div class = "title">stretch</div>
+
+			<p><em>material property measurement and analysis</em></p>
+			<p><strong>methods</strong>: market research, literature review, product + material testing, quantitative analysis, MATLAB coding</p><!--
+​			--><p><strong>tags</strong>: slime, consumer products, experiments, working with ambiguity</p><!--
+			--><p><strong>outputs</strong>: research paper, presentation at MIT engineering symposium</p>
+		
+			<div class="column-two">
+				<div class = "image" align = "center"><img src="portfolio/images/stretch1.png" alt="stretch cover" style = "width: 66%"></div> 
+			</div>
+			<div class="column-two">
+				<div class = "image1"><img src="projects/slimestretching.gif" alt="slime stretching" style = "width: 100%"></div>
+			</div>
+			<h3>CONTEXT</h3>
+			<p>Slime is a non-Newtonian fluid, meaning it has complex material properties that defy typical laws of viscosity that scientists are still trying to understand. I conducted a research project on slime stretchiness, cumulating in a research paper and poster presented at an engineering symposium. This was an individual research project as part of MIT mechanical engineering. </p>
+
+			<p>What makes slime appealing to consumers, and what makes it an interesting study for science, is the material property of 'stretchiness'. My goal was to optimize slime stretchiness and to discover how altering the slime composition and strain rate affects stretchiness. </p>
+
+			<h3>STEP ONE</h3>
+			<h3><em>define the material property of stretchiness</em></h3>
+			<div class = "image1"><img src="portfolio/images/stretch2.png" alt="how to measure" style = "width: 100%"></div>
+			<p>Stretchiness has no standardized method of measurement. I needed to extract a method from the madness.</p>
+
+			<p>My first step in the process was to define stretchiness for the purposes I needed. (I settled on "the ability to expand while under tensile stress.") </p>
+
+			<h3>STEP TWO</h3>
+			<h3><em>figure out how to test stretchiness</em></h3>
+			<div class = "image1"><img src="portfolio/images/stretch3.png" alt="texture analyzer" style = "width: 100%"></div>
+
+			<p>I needed to figure out how to test that stretchiness. I settled on using a stretch test on a texture analyzer, a machine that is usually used to do experiments on food in industry settings. Stretch tests aren't the most common types of tests conducted on the texture analyzer, so creating the test and analyzing the parameters was also a trial and error process. I was able to chat with someone working at the Texture Technologies Corp, who helped me discern which built-in programs I could modify for my experiment.</p>
+
+			<p>The premise of the test: stretch samples on the lab's texture analyzer at different strain rates and noted down when they broke. </p>
+
+			<h3>STEP THREE</h3>
+			<h3><em>make the samples</em></h3>
+			
+			<div class = "image"><img src="portfolio/images/stretch4.png" alt="slime samples" style = "width: 100%"></div>
+	
+			<p>I had to develop the slime samples I wanted to run tests on. Standard recipes for slime (of which I perused many) involved different concentrations of polyvinyl acetate, or white glue, borax, and water. There were also recipes that called for the addition of shaving gel to create fluffy slimes.</p>
+
+			<p>I created six different samples of slime, and tested the four that would give me the widest range of results. ​</p>
+
+			<div class = "image1"><img src="projects/slime materials.JPG" alt="slime materials" style = "width: 47.5%"></div> <div class = "image1"><img src="projects/slime samples.JPG" alt="slime samples" style = "width: 47.5%"></div>
+			<h3>STEP FOUR</h3>
+			<h3><em>what do the generated graphs mean?</em></h3>
+			<div class = "image"><img src="portfolio/images/stretch5.png" alt="slime graphs" style = "width: 100%"></div>
+			<p>I was excited to analyze the data that the texture analyzer collected, rich datasets that came in the form of several huge CSV files. I structured the data force versus distance graphs in MATLAB. Then I paused. How do I extract a break point from a force versus distance graph? What did that even mean? This was the inverse of engineering word problems in which, during a unit learning about a specific formula, we are given problems to apply it to the real world. Here, I had a real world problem that I needed to assign a mathematical concept to.</p>
+
+			<p>My advisor and I figured out the break point was when the texture analyzer was no longer exerting any force to pull the slime. This meant break point was simply the point at which the force magnitude rapidly decreased to zero. I was looking for the maximum change in force: in other words, a derivative. I wrote that into my code to perform the analysis.</p>
+
+			<h3>STEP FIVE</h3>
+			<h3><em>how to compare stretchiness?</em></h3>
+			
+			<div class = "image"><img src="portfolio/images/stretch6.png" alt="slime graphs" style = "width: 100%"></div>
+			<p>I then created histograms of the distributions of break lengths for each strain rate. Now came another sticking point: how would I actually compare stretchiness? I would need a line of best fit of some sort, but the data wasn't linear, and the slope didn't make much sense. If I graphed the rate at which I pulled the slime during the test (mm/s) over break length (mm), I would get a slope with units of time (s). How exactly would that be interpreted in terms of stretchiness? I realized at that point that it wasn't enough to gather data: the hard part was the analysis, in which the data could be structured into something that would make more sense for a consumer.</p>
+
+			<p>After consulting with my advisor, I decided to abandon a linear fit. I graphed the fraction of slimes that broke over the strain rate and fit the data to a sigmoidal function, or s-curve. This allowed me to find the critical strain rate, or the rate at which 50% of the slimes are predicted to break. I found that decreasing the amount of borax from the standard recommended slime recipe increased stretchiness. Further research can find the optimal amount of borax, as decreasing it entirely will result in no cross-linking of the polymer chains and thus no slime formation.</p>
+​
+			<div class = "image"><img src="portfolio/images/stretch7.png" alt="slime graphs" style = "width: 100%"></div>
+
+			<h3>RESULTS</h3>
+
+			<p>From this project, I was able to apply research to improve an existing consumer product, as well as crystallize a structured thought process for solving a specific problem based on many different possibilities. I learned how to pick an ideal quality of a product and to frame a research question around it, and then how to use existing engineering tools to collect and analyze data that will answer the question. I was able to use my analytical skills to structure a rigorous analysis from data that, at first glance, did not make the most sense.</p>
+
+			<p>I synthesized my results into a poster that was presented at an engineering symposium. I also wrote a research paper that can be found <a href="projects/Final Paper Two Column.pdf">here</a>. Thumbnails of the first and last pages of the research paper and of the full poster are shown below. ​​Other applications from consumer products can be in the food industry or in the research of viscoelastic properties of slime to create stretchable strain sensors and electrochromic devices.</p>
+
+			<div class = "image" align= "center"><img src="projects/1.png" alt="paper" style = "width: 49.5%">  <img src="projects/2.png" alt="paper" style = "width: 49.5%"></div>
+
+			<a href="projects/FinalPoster.png" ><div class = "image" align= "center"><img src="projects/FinalPoster.png" alt="poster" style = "width: 100%"></div></a>
+			
+
+		</div>
+
+	</body>
+
+</html>
