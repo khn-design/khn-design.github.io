@@ -32,7 +32,7 @@ p {
 }
 
 #logo {
-	max-width: 15%;
+	max-width: 240px;
 	position: relative;
 	display: block;
 	padding: 10px 0 20px;
@@ -189,7 +189,7 @@ h2 {
 }
 
 .about {
-	width: 550px;
+	width: 40%;
 	padding: 0 10px;
 }
 
