@@ -146,15 +146,6 @@ hr {
 	display: inline;
 }
 
-.small_image {
-
-	margin: 25px 0px 0px 0px;
-	padding: 0px 0px;
-	position: relative;	
-	display: inline-block;
-}
-
-
 /* Fixed width for larger screens (e.g. desktops) */
 .content-container {
     width: 60%;
@@ -175,7 +166,7 @@ hr {
 /* Styles for screens up to 480px wide (e.g., mobile phones) */
 @media (max-width: 480px) {
   .content-container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 125px 10%;
   }
