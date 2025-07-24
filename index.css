@@ -77,7 +77,7 @@ p {
 	padding-top: 50px;
 	position: relative;
 	margin: 0 auto;
-	width: 100%;
+	width: 70%;
 	align-items: center; 
 	justify-content: center;
 }
@@ -112,7 +112,7 @@ h2 {
 
 .column-two {
 	vertical-align: top;
-	width: 410px;
+	width: 45%;
 	margin: 0px 0px 0px 30px;
 	display: inline-block;
 }
@@ -215,14 +215,10 @@ h2 {
 
 a {
  	text-decoration: none;
- 	color: black;
+ 	color: rgba(180, 180, 180, 1);
  }
 
- a:link, a:visited {
- 	color: black;
- }
-
- a:hover {
+a:hover {
  	color: rgba(244, 0, 134, 1);
  }
 

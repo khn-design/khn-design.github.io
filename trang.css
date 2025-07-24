@@ -7,9 +7,9 @@ body {
 
 #page-wrap {
 	display: inline-block;
-    width: 60%;
+    width: 70%;
     margin: auto;
-    padding: 125px 20%;
+    padding: 125px 15%;
 }
 
 .wrap {
@@ -67,7 +67,7 @@ p {
 }
 
 #logo {
-	max-width: 15%;
+	max-width: 240px;
 	position: relative;
 	display: block;
 	padding: 10px 0 20px;
@@ -105,15 +105,16 @@ p {
 
 a {
  	text-decoration: none;
- 	color: black;
+ 	color: rgba(180, 180, 180, 1);
  }
 
- a:link, a:visited {
- 	color: black;
- }
-
- a:hover {
+a:hover {
  	color: rgba(244, 0, 134, 1);
+ }
+
+.current-page {
+	color: black;
+    
  }
 
 .pic {
