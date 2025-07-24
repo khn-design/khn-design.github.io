@@ -175,8 +175,8 @@ hr {
 /* Styles for screens up to 480px wide (e.g., mobile phones) */
 @media (max-width: 480px) {
   .content-container {
-    width: 90%;
+    width: 88%;
     margin: auto;
-    padding: 125px 5%;
+    padding: 125px 6%;
   }
 }
