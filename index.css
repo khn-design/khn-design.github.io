@@ -59,9 +59,10 @@ p {
 	padding-top: 125px;
 	position: relative;
 	margin: 0 auto;
-	width: 100%;
+	width: 70%;
 	align-items: center; 
 	justify-content: center;
+	display: inline-block;
 }
 
 .wrapper {
@@ -71,6 +72,7 @@ p {
 	width: 100%;
 	align-items: center; 
 	justify-content: center;
+	display: inline-block;
 }
 
 .project-wrap {
@@ -119,10 +121,10 @@ h2 {
 
 .image {
 	
-	margin: 30px 0px;
-	padding: 0px 0px;
-	position: relative;
-	
+	margin: 1%;
+	padding: 1% 0;
+	position: relative;	
+	display: inline;
 }
 
 .image_description {
@@ -189,11 +191,12 @@ h2 {
 }
 
 .about {
-	width: 40%;
-	padding: 0 10px;
+	width: 50%;
+	padding: 0 ;
 }
 
 .about-para {
+
 	padding-left: 140px;
 	margin-left: 140px;
 	letter-spacing: 0.5px;
