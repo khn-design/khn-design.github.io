@@ -203,6 +203,15 @@ h2 {
 	text-align: center;
 }
 
+.title {
+	color: #000;
+	display: inline-block;
+	font-family: 'letter-gothic-std', 'Quicksand', monospace, sans-serif;
+	font-size: 35px;
+	text-align: left; 
+	
+}
+
 .close {
 	width: 300px;
 	display: inline-block;
