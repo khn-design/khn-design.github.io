@@ -79,7 +79,7 @@ p {
 	padding-top: 50px;
 	position: relative;
 	margin: 0 auto;
-	width: 70%;
+	width: 100%;
 	align-items: center; 
 	justify-content: center;
 }
@@ -245,3 +245,29 @@ a:hover {
 	color: rgba(41, 41, 41, 1);  /* #292929 */ 
 }
 
+/* Fixed width for larger screens (e.g. desktops) */
+.content-container {
+  width: 960px; 
+  margin: 0 auto; 
+}
+
+
+/* Styles for screens up to 768px wide (e.g., tablets in portrait mode) */
+@media (max-width: 768px) {
+  .content-container {
+    width: 90%; 
+    padding: 0 15px; 
+  }
+}
+
+/* Styles for screens up to 480px wide (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .content-container {
+    width: 100%; 
+    padding: 0 10px;
+  }
+  #page-wrap {
+  	width: 90%;
+  	padding: 175px 5%;
+  }
+}
